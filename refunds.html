@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy | Prayogsala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --background: #0a0a0a;
+            --foreground: #ededed;
+        }
+
+        body {
+            color: var(--foreground);
+            background: var(--background);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-neutral-950 text-white selection:bg-green-500/30">
+
+    <!-- NAVBAR -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-white/5 h-16 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
+            <a href="/index.html" class="flex items-center gap-2 group">
+                <span class="font-bold text-lg tracking-tight text-white font-mono">PRAYOGSALA</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 px-6 pb-20 max-w-4xl mx-auto w-full">
+        <article class="prose prose-invert prose-neutral max-w-none">
+            <h1 class="text-4xl font-bold mb-2">Refund & Cancellation Policy</h1>
+            <p class="text-neutral-500 text-sm mb-8">Last Updated: February 4, 2026</p>
+
+            <div class="space-y-6 text-neutral-300 leading-relaxed">
+                <p>
+                    Thank you for using services at <strong>Prayogsala</strong>. We want to ensure you have a rewarding
+                    experience while they’re exploring, evaluating, and purchasing our digital tools.
+                </p>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">1. Digital Consumable Nature</h2>
+                <p>
+                    Our premium services (such as "AI Astrologer Questions") are <strong>digital consumables</strong>.
+                    This means that once a service is requested and the AI generation process has commenced, the
+                    "product" is considered consumed and cannot be "returned."
+                </p>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">2. No Refunds on Completed Services</h2>
+                <p>
+                    <strong>All sales are final.</strong> We do not issue refunds for:
+                </p>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>Astrological readings that you disagree with or find inaccurate (astrology is subjective).</li>
+                    <li>Services that have already been generated and delivered to your screen.</li>
+                    <li>Change of mind after the transaction is complete.</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">3. Technical Failures</h2>
+                <p>
+                    We stand by the technical quality of our delivery. If a technical error occurs (e.g., you paid but
+                    the system crashed and did not display an answer), we will investigate and provide either:
+                </p>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>A manual refund of the transaction.</li>
+                    <li>A credit code to retry your question.</li>
+                </ul>
+                <p>
+                    To request a refund due to technical failure, please email us with your <strong>Order ID</strong>
+                    and timestamp.
+                </p>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">4. Contact Us</h2>
+                <p>
+                    If you have any issues with your transaction, please contact us immediately:
+                </p>
+                <p class="font-medium">
+                    Email: <a href="mailto:support@wagleus.com"
+                        class="text-[#D4AF37] hover:underline">support@wagleus.com</a>
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="border-t border-neutral-900 py-12 bg-neutral-950 text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-lg tracking-tight text-white font-mono">PRAYOGSALA</span>
+                </div>
+                <div class="text-sm text-neutral-600 font-mono">
+                    &copy; <span id="year"></span> Prayogsala. All rights reserved.
+                </div>
+            </div>
+            <div class="flex gap-6 text-sm font-medium font-mono text-neutral-500">
+                <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+                <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+                <a href="refunds.html" class="hover:text-white transition-colors">Refunds</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

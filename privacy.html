@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Prayogsala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --background: #0a0a0a;
+            --foreground: #ededed;
+        }
+
+        body {
+            color: var(--foreground);
+            background: var(--background);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-neutral-950 text-white selection:bg-green-500/30">
+
+    <!-- NAVBAR -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-white/5 h-16 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
+            <a href="/index.html" class="flex items-center gap-2 group">
+                <span class="font-bold text-lg tracking-tight text-white font-mono">PRAYOGSALA</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 px-6 pb-20 max-w-4xl mx-auto w-full">
+        <article class="prose prose-invert prose-neutral max-w-none">
+            <h1 class="text-4xl font-bold mb-2">Privacy Policy</h1>
+            <p class="text-neutral-500 text-sm mb-8">Last Updated: February 4, 2026</p>
+
+            <div class="space-y-6 text-neutral-300 leading-relaxed">
+                <p>
+                    <strong>Prayogsala</strong> ("we," "our," or "us") is an experimental product developed and operated
+                    by <strong>Wagle Universal Solutions</strong> ("Company"). We are committed to protecting your
+                    privacy. This Privacy Policy explains how your personal information is collected, used, and
+                    disclosed by Prayogsala.
+                </p>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">1. Information We Collect</h2>
+                <p>
+                    We collect information to provide better services to all our users. The types of information we
+                    collect include:
+                </p>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>
+                        <strong>Usage Data:</strong> We use tools like Google Analytics to collect anonymous data about
+                        how you interact with our website (e.g., pages visited, time spent, device type).
+                    </li>
+                    <li>
+                        <strong>Input Data:</strong> When you use specific tools (like the Vedic Astrology Engine), you
+                        may voluntarily provide data such as birth date, time, and location. This data is processed in
+                        real-time to generate results and is <strong>not stored individually</strong> on our servers
+                        after the session is complete, unless explicitly stated otherwise.
+                    </li>
+                    <li>
+                        <strong>Transaction Data:</strong> If you purchase premium services, your payment is processed
+                        by our secure payment provider, <strong>Dodo Payments</strong>. We do not store your credit card
+                        details. We only retain the transaction receipt and Order ID to allow you to access your
+                        purchased service.
+                    </li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">2. How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>Provide, operate, and maintain our tools and services.</li>
+                    <li>Improve, personalize, and expand our experiments.</li>
+                    <li>Analyze how you use our website to optimize performance and user experience.</li>
+                    <li>Develop new products, services, features, and functionality.</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">3. Third-Party Services</h2>
+                <p>
+                    We use third-party services for analytics, payments, and infrastructure:
+                </p>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li><strong>Google Analytics</strong> for website usage data.</li>
+                    <li><strong>Dodo Payments</strong> for secure transaction processing. By making a purchase, you
+                        agree to their terms of service.</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">4. Data Security</h2>
+                <p>
+                    We implement reasonable security measures to protect your information. However, please be aware that
+                    no method of transmission over the internet or method of electronic storage is 100% secure.
+                </p>
+
+                <h2 class="text-xl font-bold text-white mt-8 mb-4">5. Contact Us</h2>
+                <p>
+                    If you have any questions about this Privacy Policy, please contact Wagle Universal Solutions at <a
+                        href="https://www.wagleus.com" class="text-[#D4AF37] hover:underline">www.wagleus.com</a>.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="border-t border-neutral-900 py-12 bg-neutral-950 text-white mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-2">
+                    <span class="font-bold text-lg tracking-tight text-white font-mono">PRAYOGSALA</span>
+                </div>
+                <div class="text-sm text-neutral-600 font-mono">
+                    &copy; <span id="year"></span> Prayogsala. All rights reserved.
+                </div>
+            </div>
+            <div class="flex gap-6 text-sm font-medium font-mono text-neutral-500">
+                <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+                <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+                <a href="refunds.html" class="hover:text-white transition-colors">Refunds</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
